@@ -106,17 +106,9 @@ function addListenerHitBox() {
   });
 }
 
-function resetGame() {
-  state.values.currentTime = 60;
-  state.view.timeLeft.textContent = state.values.result;
-  state.values.result = 0;
-  state.view.timeLeft.textContent = 0;
-  state.view.score.textContent = state.values.result;
-  state.view.startButton.hidden = false;
-}
-
 function initialize() {
   state.view.startButton.addEventListener("click", () => {
+    resetGame()
     moveEnemy();
     addListenerHitBox();
     countDown();
@@ -128,4 +120,12 @@ function initialize() {
   });
 }
 
+function resetGame() {
+  state.values.currentTime = 60;
+  state.view.timeLeft.textContent = state.values.result;
+  state.values.result = 0;
+  state.view.timeLeft.textContent = 0;
+  state.view.score.textContent = state.values.result;
+  state.view.startButton.hidden = false;
+}
 initialize();

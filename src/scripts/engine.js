@@ -107,7 +107,7 @@ function addListenerHitBox() {
 }
 
 function resetGame() {
-  state.values.currentTime = 60;
+  state.values.currentTime = 10;
   state.view.timeLeft.textContent = state.values.result;
   state.values.result = 0;
   state.view.timeLeft.textContent = 0;

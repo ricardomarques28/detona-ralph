@@ -15,7 +15,7 @@ const state = {
     gameVelocity: 600,
     hitPosition: 0,
     result: 0,
-    currentTime: 10,
+    currentTime: 60,
     countLife: 3,
   },
 };
@@ -130,7 +130,7 @@ function initialize() {
 }
 
 function resetGame() {
-  state.values.currentTime = 10;
+  state.values.currentTime = 60;
   state.view.timeLeft.textContent = state.values.result;
   state.values.result = 0;
   state.view.timeLeft.textContent = 0;

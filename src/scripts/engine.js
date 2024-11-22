@@ -7,7 +7,7 @@ const state = {
     startButton: document.querySelector("#start-btn"),
     resetButton: document.querySelector("#reset-btn"),
     life: document.querySelector("#life"),
-    backgroundMusic: document.getElementById("#background-music")
+    
   },
   values: {
     timerId: null,
@@ -15,7 +15,7 @@ const state = {
     gameVelocity: 600,
     hitPosition: 0,
     result: 0,
-    currentTime: 60,
+    currentTime: 10,
     countLife: 3,
   },
 };
@@ -107,7 +107,7 @@ function addListenerHitBox() {
 }
 
 function resetGame() {
-  state.values.currentTime = 60;
+  state.values.currentTime = 10;
   state.view.timeLeft.textContent = state.values.result;
   state.values.result = 0;
   state.view.timeLeft.textContent = 0;
@@ -130,7 +130,7 @@ function initialize() {
 }
 
 function resetGame() {
-  state.values.currentTime = 60;
+  state.values.currentTime = 10;
   state.view.timeLeft.textContent = state.values.result;
   state.values.result = 0;
   state.view.timeLeft.textContent = 0;

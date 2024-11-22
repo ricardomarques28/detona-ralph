@@ -5,10 +5,6 @@ body{
     cursor: url("../images/hammer.png"), default;
 }
 
-audio {
-    display: none; 
-    
-}
 .container{
     display: flex;
     flex-direction: column;

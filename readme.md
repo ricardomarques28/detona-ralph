@@ -24,8 +24,7 @@ O Detona Ralph é um jogo dinâmico no qual o objetivo é acertar os alvos certo
 ![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
 
 ## 🎨 Estrutura do Projeto
-bash
-Copiar código
+
 detona-ralph/  
 ├── src/  
 │   ├── audios/          # Arquivos de áudio (.m4a)  
